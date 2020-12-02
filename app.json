@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "TaxiClient",
+    "description": "Taxi client app",
+    "slug": "TaxiClient",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "notification": {
+      "icon": "./assets/images/push_notification.png"
+    },
+    "version": "4.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/appIcon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "usesAppleSignIn":true,
+      "bundleIdentifier": "com.taxiproject.client",
+      "infoPlist": {
+        "NSLocationAlwaysUsageDescription": "This app uses the location to find the taxi near you.",
+        "NSLocationWhenInUseUsageDescription": "This app uses the location to find the taxi near you.",
+        "NSCameraUsageDescription": "This app uses the camera to take make profile.",
+        "NSPhotoLibraryUsageDescription": "This app uses Photo Library for uploading your profile picture.",
+        "UIBackgroundModes": [
+        "location",
+        "fetch"
+        ]
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyAfvchZDmgIeLbtxURyITwSp3zP2xZKJfw"
+      }
+    },
+    "android": {
+      "package": "com.taxiproject.client",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA_ROLL"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAfvchZDmgIeLbtxURyITwSp3zP2xZKJfw"
+        }
+      }
+    },
+    "facebookScheme": "fb489083292091743",
+    "facebookAppId": "2585086664857204",
+    "facebookDisplayName": "GrabCab"
+  }
+}
